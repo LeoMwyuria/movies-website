@@ -1,0 +1,283 @@
+.loginPage{
+    width: 375px;
+height: 667px;
+
+margin-left: auto;
+margin-right: auto;
+}
+body{
+    background: rgba(16, 20, 30, 1);
+    font-family: 'Outfit';
+}
+.login{
+    background: rgba(22, 29, 47, 1);
+    width: 327px;
+    height: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: grid;
+    padding: 5px;
+ 
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+
+  
+}
+.password{
+    border: 0;
+    width: 279px;
+height: 37px;
+border-bottom:1px solid rgba(90, 105, 143, 1);
+background: rgba(22, 29, 47, 1);
+color: white;
+}
+.email{
+    border: 0;
+    width: 279px;
+height: 37px;
+border-bottom:1px solid rgba(90, 105, 143, 1);
+background: rgba(22, 29, 47, 1);
+color: white;
+
+}
+input{
+    outline: 0;
+}
+.pDiv{
+   
+    width: 280px;
+
+    text-align: left;
+}
+.pDiv p{
+  
+font-size: 32px;
+font-weight: 400;
+line-height: 40.32px;
+letter-spacing: -0.5px;
+text-align: left;
+
+}
+.pictureDiv{
+    
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginBtn{
+    width: 279px;
+height: 48px;
+color: white;
+background: rgba(252, 71, 71, 1);
+border: 0px;
+border-radius: 5px;
+margin-top: 20px;
+
+}
+.toSignup span:hover{
+    cursor: pointer;
+}
+.formLogin{
+    display: grid;
+
+}
+.error{
+    text-align: end;
+    color: red;
+   
+}
+.header{
+    padding: 10px;
+  background: rgba(22, 29, 47, 1);
+    width: 375px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.middleHeader{
+    display: flex;
+    gap: 20px;
+}
+.middleHeader img{
+    width: 16px;
+    height: 16px;
+}
+.middleHeader img:hover{
+    cursor: pointer;
+    
+}
+.main{
+    width: 375px;
+height: 667px;
+margin-right: auto;
+margin-left: auto;
+
+}
+.searchBar {
+    margin-top: 10px;
+    background: rgba(16, 20, 30, 1) url('./assets/searchLogo.png') no-repeat left center;
+    width: 280px;
+    height: 30px; 
+    border: 0px;
+    font-size: 15px;
+    color: white;
+    padding-left: 30px; 
+}
+.trending {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .trending-media-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .media {
+    width: 240px;
+    height: 145px;
+    margin-right: 20px;
+    
+    border-radius: 10px;
+  }
+  .media:hover{
+    cursor: pointer;
+  }
+  .media img{
+    width: 240px;
+    height: 140px;
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+  }
+  
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+  .media-details{
+    position: relative;
+    z-index: 5;
+    bottom: 100px;
+    color: white;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+.media-details1{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.85;
+}
+.media-details1 img{
+  border-radius: 1px;
+}
+
+
+.recommended{
+  width: 375px;
+
+
+
+}
+.recommended-details1{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+
+.recommendedMedia:hover{
+  cursor: pointer;
+}
+.recommendedMedia img{
+  width: 180px;
+  height: 140px;
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+}
+.recommended-media-container {
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-gap: 10px;
+  
+}
+
+
+.recommended-details{
+  position: relative;
+  z-index: 5;
+  
+  color: white;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.recommendedBookmarkBtn  img{
+  border-radius: 1px;
+  position: relative;
+  z-index: 5;
+  width: 12px;
+  height: 14px;
+}
+.BookmarkBtn img{
+  border-radius: 1px;
+  position: relative;
+  z-index: 5;
+  width: 12px;
+  height: 14px;
+}
+.recommendedBookmarkBtn{
+  width: 32px;
+  height: 32px;
+  position: relative;
+  bottom: 125px;
+  background: rgba(16, 20, 30, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 60%;
+  left: 130px;
+
+
+ 
+}
+.BookmarkBtn{
+  width: 32px;
+  height: 32px;
+  position: relative;
+  bottom: 25px;
+  background: rgba(16, 20, 30, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 60%;
+  left: 190px;
+
+
+ 
+}
