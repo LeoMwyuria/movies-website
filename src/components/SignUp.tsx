@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import picture from '../assets/Movie.png';
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
-
 interface FormValues {
     email: string;
     password: string;
@@ -12,30 +11,33 @@ interface FormValues {
 }
 
 const SignUp: React.FC = () => {
+    
     const navigation = useNavigate();
 
     const toLoginClick = () => {
         navigation("/");
     };
 
-    const handleSignUp = async (values: FormValues, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) => {
+    const handleSignUp = async (values: FormValues) => {
         try {
             const auth = getAuth();
             const userCredential = await createUserWithEmailAndPassword(auth, values.email, values.password);
             const user = userCredential.user;
             console.log('User registered successfully:', user);
-
+            
+            navigation("/Home");
+    
+          
             const db = getDatabase();
             await set(ref(db, 'users/' + user.uid), {
                 email: user.email,
+               
             });
-
-            setSubmitting(false);
-            navigation("/Home");
+    
+           
         } catch (error: any) {
             const errorMessage: string = (error instanceof Error) ? error.message : 'An unknown error occurred';
             console.error('Error registering user:', errorMessage);
-            setSubmitting(false);
         }
     };
 
@@ -67,21 +69,19 @@ const SignUp: React.FC = () => {
                     }}
                     onSubmit={handleSignUp}
                 >
-                    {({ isSubmitting }) => (
-                        <Form className='formLogin'>
-                            <Field type="email" name="email" placeholder="Email Address" className="email" />
-                            <ErrorMessage name="email" component="div" className="error" />
+                    <Form className='formLogin'>
+                        <Field type="email" name="email" placeholder="Email Address" className="email" />
+                        <ErrorMessage name="email" component="div" className="error" />
 
-                            <Field type="password" name="password" placeholder="Password" className="password" />
-                            <ErrorMessage name="password" component="div" className="error" />
+                        <Field type="password" name="password" placeholder="Password" className="password" />
+                        <ErrorMessage name="password" component="div" className="error" />
 
-                            <Field type="password" name="repeatPassword" placeholder="Repeat Password" className="password" />
-                            <ErrorMessage name="repeatPassword" component="div" className="error" />
+                        <Field type="password" name="repeatPassword" placeholder="Repeat Password" className="password" />
+                        <ErrorMessage name="repeatPassword" component="div" className="error" />
+                        
 
-                            {isSubmitting && <div className="error">Signing In...</div>}
-                            <button type="submit" className='loginBtn' disabled={isSubmitting}>Create new account</button>
-                        </Form>
-                    )}
+                        <button type="submit" className='loginBtn'>Create new account</button>
+                    </Form>
                 </Formik>
                 <div className='toSignup'>Already Have An Account? <span onClick={toLoginClick} style={{ color: 'rgba(252, 71, 71, 1)' }}>Login</span></div>
             </div>
