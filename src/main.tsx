@@ -1,4 +1,3 @@
-// main.tsx
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
@@ -12,7 +11,6 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import './components/firebase';
 import ProtectedRoute from './components/protectedRoute';
-
 
 function Main() {
   const [user, setUser] = useState<User | null>(null);
