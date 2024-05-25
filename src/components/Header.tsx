@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ logoSrc, homeLogoSrc, moviesLogoSrc, tv
       <div><img src={logoSrc} alt="" /></div>
       <div className='middleHeader'>
         <img onClick={toHomeClick} src={homeLogoSrc} alt="" />
-        <img src={moviesLogoSrc} alt="" onClick={toMoviesClick} /> {/* Attach onClick handler */}
+        <img src={moviesLogoSrc} alt="" onClick={toMoviesClick} /> 
         <img onClick={toTvSeriesClick} src={tvSeriesLogoSrc} alt="" />
         <img onClick={toBookmarksClick} src={bookMarkLogoSrc} alt="" />
       </div>

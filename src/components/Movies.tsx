@@ -32,7 +32,7 @@ const Movies: React.FC<MoviesProps> = ({ user }) =>{
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [searchCount, setSearchCount] = useState<number>(0);
 
-    const [bookmarkedMovies, toggleBookmark] = useBookmark(); // Use the custom hook
+    const [bookmarkedMovies, toggleBookmark] = useBookmark(); 
 
     useEffect(() => {
         const fetchTrendingData = async () => {
@@ -82,7 +82,7 @@ const Movies: React.FC<MoviesProps> = ({ user }) =>{
                                     <img
                                         src={bookmarkedMovies.has(movie.id) ? Bookmark2 : Bookmark1}
                                         alt="Bookmark Button"
-                                        onClick={() => toggleBookmark(movie.id)} // Use toggleBookmark function
+                                        onClick={() => toggleBookmark(movie.id)} 
                                         style={{ cursor: 'pointer' }}
                                     />
                                 </div>
