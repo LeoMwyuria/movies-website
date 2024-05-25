@@ -78,7 +78,7 @@ const SignUp: React.FC = () => {
                             <Field type="password" name="repeatPassword" placeholder="Repeat Password" className="password" />
                             <ErrorMessage name="repeatPassword" component="div" className="error" />
 
-                            {isSubmitting && <div className="error">Logging in...</div>}
+                            {isSubmitting && <div className="error">Signing In...</div>}
                             <button type="submit" className='loginBtn' disabled={isSubmitting}>Create new account</button>
                         </Form>
                     )}
