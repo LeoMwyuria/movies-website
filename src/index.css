@@ -281,3 +281,615 @@ margin-left: auto;
 
  
 }
+@media screen and (min-width:768px){
+  /* tablet login responsive */
+  .loginPage{
+    width: 400px;
+height: 667px;
+
+margin-left: auto;
+margin-right: auto;
+}
+body{
+    background: rgba(16, 20, 30, 1);
+    font-family: 'Outfit';
+}
+.login{
+    background: rgba(22, 29, 47, 1);
+    width: 400px;
+    height: 373px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: grid;
+    padding: 5px;
+ 
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+
+  
+}
+.password{
+    border: 0;
+    width: 336px;
+height: 37px;
+border-bottom:1px solid rgba(90, 105, 143, 1);
+background: rgba(22, 29, 47, 1);
+color: white;
+}
+.email{
+    border: 0;
+    width: 336px;
+height: 37px;
+border-bottom:1px solid rgba(90, 105, 143, 1);
+background: rgba(22, 29, 47, 1);
+color: white;
+
+}
+input{
+    outline: 0;
+}
+.pDiv{
+   
+    width: 280px;
+
+    text-align: left;
+}
+.pDiv p{
+  
+font-size: 32px;
+font-weight: 400;
+line-height: 40.32px;
+letter-spacing: -0.5px;
+text-align: left;
+
+}
+.pictureDiv{
+    
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginBtn{
+  width: 336px;
+height: 48px;
+color: white;
+background: rgba(252, 71, 71, 1);
+border: 0px;
+border-radius: 5px;
+margin-top: 20px;
+
+}
+.toSignup span:hover{
+    cursor: pointer;
+}
+.formLogin{
+    display: grid;
+
+}
+.error{
+    text-align: end;
+    color: red;
+   
+}
+/* Tablet Header Responsive */
+.header{
+  padding: 10px;
+background: rgba(22, 29, 47, 1);
+width: 752px;
+height: 55px;
+border-radius: 15px;
+margin-left: auto;
+margin-right: auto;
+
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.middleHeader{
+  display: flex;
+  gap: 20px;
+}
+.middleHeader img{
+  width: 16px;
+  height: 16px;
+}
+.middleHeader img:hover{
+  cursor: pointer;
+  
+}
+/* Tablet Main Responsive */
+.main{
+  width: 768px;
+}
+.searchBar {
+  margin-top: 10px;
+  background: rgba(16, 20, 30, 1) url('./assets/searchLogo.png') no-repeat left center;
+  width: 381px;
+  height: 30px; 
+  border: 0px;
+  font-size: 15px;
+  color: white;
+  padding-left: 30px; 
+}
+.trending {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.trending-media-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.media {
+  width: 240px;
+  height: 145px;
+  margin-right: 20px;
+  
+  border-radius: 10px;
+}
+.media:hover{
+  cursor: pointer;
+}
+.media img{
+  width: 240px;
+  height: 140px;
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+.media-details{
+  position: relative;
+  z-index: 5;
+  bottom: 100px;
+  color: white;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.media-details1{
+display: flex;
+gap: 7px;
+align-items: center;
+font-size: 13px;
+opacity: 0.85;
+}
+.media-details1 img{
+border-radius: 1px;
+}
+
+
+.recommended{
+width: 719px;
+
+
+
+}
+.recommended-details1{
+display: flex;
+gap: 7px;
+align-items: center;
+font-size: 13px;
+opacity: 0.85;
+}
+
+
+.recommendedMedia:hover{
+cursor: pointer;
+}
+.recommendedMedia img{
+width: 220px;
+height: 140px;
+border-radius: 10px;
+position: relative;
+z-index: -1;
+}
+.recommended-media-container {
+display: grid;
+grid-template-columns:auto auto auto;
+grid-gap: 50px;
+
+}
+
+
+.recommended-details{
+position: relative;
+z-index: 5;
+
+color: white;
+font-size: 14px;
+margin-left: 5px;
+}
+
+.recommendedBookmarkBtn  img{
+border-radius: 1px;
+position: relative;
+z-index: 5;
+width: 12px;
+height: 14px;
+}
+.BookmarkBtn img{
+border-radius: 1px;
+position: relative;
+z-index: 5;
+width: 12px;
+height: 14px;
+}
+.recommendedBookmarkBtn{
+width: 32px;
+height: 32px;
+position: relative;
+bottom: 125px;
+background: rgba(16, 20, 30, 1);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+opacity: 60%;
+left: 175px;
+
+
+
+}
+.BookmarkBtn{
+width: 32px;
+height: 32px;
+position: relative;
+bottom: 25px;
+background: rgba(16, 20, 30, 1);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+opacity: 60%;
+left: 190px;
+
+
+
+}
+
+
+
+
+
+}
+@media screen and (min-width:1352px){
+    /* tablet login responsive */
+    .loginPage{
+      width: 400px;
+  height: 667px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  }
+  body{
+      background: rgba(16, 20, 30, 1);
+      font-family: 'Outfit';
+  }
+  .login{
+      background: rgba(22, 29, 47, 1);
+      width: 400px;
+      height: 373px;
+  
+  
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+      display: grid;
+      padding: 5px;
+   
+      
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      
+  
+    
+  }
+  .password{
+      border: 0;
+      width: 336px;
+  height: 37px;
+  border-bottom:1px solid rgba(90, 105, 143, 1);
+  background: rgba(22, 29, 47, 1);
+  color: white;
+  }
+  .email{
+      border: 0;
+      width: 336px;
+  height: 37px;
+  border-bottom:1px solid rgba(90, 105, 143, 1);
+  background: rgba(22, 29, 47, 1);
+  color: white;
+  
+  }
+  input{
+      outline: 0;
+  }
+  .pDiv{
+     
+      width: 280px;
+  
+      text-align: left;
+  }
+  .pDiv p{
+    
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40.32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  
+  }
+  .pictureDiv{
+      
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .loginBtn{
+    width: 336px;
+  height: 48px;
+  color: white;
+  background: rgba(252, 71, 71, 1);
+  border: 0px;
+  border-radius: 5px;
+  margin-top: 20px;
+  
+  }
+  .toSignup span:hover{
+      cursor: pointer;
+  }
+  .formLogin{
+      display: grid;
+  
+  }
+  .error{
+      text-align: end;
+      color: red;
+     
+  }
+  /* Tablet Header Responsive */
+  .header{
+    padding: 10px;
+  background: rgba(22, 29, 47, 1);
+  width: 87px;
+  height: 95vh;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  float: left;
+
+  
+  flex-direction: column;
+  }
+  .middleHeader{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    height: 750px;
+  }
+  .middleHeader img{
+    width: 16px;
+    height: 16px;
+  }
+  .middleHeader img:hover{
+    cursor: pointer;
+    
+  }
+  /* Tablet Main Responsive */
+  .main{
+    width: 100%;
+  
+  }
+  .searchBar {
+    margin-top: 10px;
+    background: rgba(16, 20, 30, 1) url('./assets/searchLogo.png') no-repeat left center;
+    width: 381px;
+    height: 30px; 
+    border: 0px;
+    font-size: 15px;
+    color: white;
+    padding-left: 30px; 
+    margin-left: 20px;
+  }
+  .trending {
+    overflow-x: auto;
+    overflow-y: hidden;
+   
+  }
+  .trendingP{
+   position: relative;
+    width: 150px;
+    margin-left: 130px;
+    height: 30px;
+    
+  }
+
+ 
+  
+  .trending-media-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+  }
+  
+  .media {
+    width: 470px;
+    height: 230px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .media:hover{
+    cursor: pointer;
+  }
+  .media img{
+    width: 470px;
+    height: 230px;
+    
+    
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+  .media-details{
+    position: relative;
+    z-index: 5;
+    bottom: 100px;
+    color: white;
+    font-size: 14px;
+    margin-left: 20px;
+
+  }
+  .media-details1{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 15px;
+  opacity: 0.85;
+  }
+  .media-details1 img{
+  border-radius: 1px;
+  }
+  
+  
+  .recommended{
+  width: 100%;
+  
+  
+  
+  
+  }
+  .recommended-details1{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.85;
+
+  }
+  
+  
+  .recommendedMedia:hover{
+  cursor: pointer;
+  }
+  .recommendedMedia img{
+    width: 280px;
+    height: 174px; 
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+  }
+  .recommended-media-container {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  grid-gap: 30px;
+  margin-left: 120px;
+ 
+  
+  }
+  
+  
+  .recommended-details{
+  position: relative;
+  z-index: 5;
+  
+  color: white;
+  font-size: 14px;
+  margin-left: 5px;
+  }
+  
+  .recommendedBookmarkBtn  img{
+  border-radius: 1px;
+  position: relative;
+  z-index: 5;
+  width: 12px;
+  height: 14px;
+  }
+  .BookmarkBtn img{
+  border-radius: 1px;
+  position: relative;
+  z-index: 5;
+  width: 12px;
+  height: 14px;
+  }
+  .recommendedBookmarkBtn{
+  width: 32px;
+  height: 32px;
+  position: relative;
+  bottom: 165px;
+  background: rgba(16, 20, 30, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 60%;
+  left: 225px;
+  
+  
+  
+  }
+  .BookmarkBtn{
+  width: 32px;
+  height: 32px;
+  position: relative;
+  bottom: 115px;
+  background: rgba(16, 20, 30, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 60%;
+  left: 390px;
+  
+  
+  
+}
+h2{
+  margin-left: 120px;
+}
+  
+}

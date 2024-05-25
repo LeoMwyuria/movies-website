@@ -32,6 +32,7 @@ interface AppProps {
 }
 
 function App({ user }: AppProps): JSX.Element {
+  console.log(user?.email)
   const [trendingMedia, setTrendingMedia] = useState<Media[]>([]);
   const [wholeMedia, setWholeMedia] = useState<Media[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -91,8 +92,8 @@ function App({ user }: AppProps): JSX.Element {
       />
       <SearchBar placeholder="Search for movies or TV series" onSearch={handleSearch} />
       {searchQuery === '' && (
-        <div>
-          <h2 style={{ color: 'white' }}>Trending</h2>
+        <div >
+          <h2  className='trendingP'  style={{ color: 'white' }}>Trending</h2>
           <div className="trending">
             <div className="trending-media-container">
               {filteredTrendingMedia.map((media: Media) => (
@@ -166,7 +167,7 @@ function App({ user }: AppProps): JSX.Element {
                   <span>{media.media_type === 'movie' ? '· Movie' : '· TV Series'}</span>
                   <span>{media.adult ? '· 18+' : '· PG'}</span>
                 </div>
-                <p style={{ width: '160px' }}>{media.title}</p>
+                <p style={{ width: '160px' }}>{media.title}{media.original_name}</p>
               </div>
             </div>
           ))}

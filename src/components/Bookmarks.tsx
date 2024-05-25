@@ -29,8 +29,8 @@ interface BookmarksProps {
 
   const Bookmarks: React.FC<BookmarksProps> = ({ user }) =>  {
     const [searchQuery, setSearchQuery] = useState<string>('');
-    const [media, setMedia] = useState<Media[]>([]); // Renamed 'movies' to 'media'
-    const [bookmarkedItems, toggleBookmark] = useBookmark(); // Using the custom hook
+    const [media, setMedia] = useState<Media[]>([]); 
+    const [bookmarkedItems, toggleBookmark] = useBookmark();
 
     useEffect(() => {
       const fetchTrendingData = async () => {
